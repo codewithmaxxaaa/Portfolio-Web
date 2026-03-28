@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aryan | Full Stack Developer · UI/UX · Web Design · 3D</title>
+  <meta name="description" content="Aryan – Full Stack Developer, UI/UX Designer & 3D Creator. Specializing in MERN, Python, Java, Web Design and AI-powered solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Particle canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-bracket">&lt;</span>Aryan<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-sm" id="navCta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+
+      <!-- LEFT COLUMN -->
+      <div class="hero-text" data-aos="fade-right">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-heading">
+          Hey, I'm<br />
+          <span class="gradient-text">Aryan</span>
+        </h1>
+        <h2 class="hero-sub" id="typedSub">Full Stack Developer</h2>
+        <p class="hero-stack">MERN &nbsp;•&nbsp; Python &nbsp;•&nbsp; Java &nbsp;•&nbsp; UI/UX &nbsp;•&nbsp; Web Design &nbsp;•&nbsp; 3D</p>
+        <p class="hero-desc">
+          I craft <strong>modern, scalable web apps</strong>, stunning <strong>UI/UX experiences</strong>,
+          immersive <strong>3D designs</strong>, and <strong>AI-powered solutions</strong> that make a real impact.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary" id="viewProjectsBtn">
+            <span>View Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-outline" id="contactBtn">Contact Me</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num" data-target="20">0</span><span class="stat-label">Projects</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num" data-target="3">0</span><span class="stat-label">Years Exp.</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num" data-target="10">0</span><span class="stat-label">Happy Clients</span></div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN – character + floating icons -->
+      <div class="hero-visual" data-aos="fade-left">
+        <div class="glow-ring"></div>
+        <img src="hero_character.png" alt="3D Developer Character" class="hero-char" id="heroChar" />
+
+        <!-- Floating tech pills -->
+        <div class="orbit-container">
+          <div class="orbit-icon orbit-1" title="React">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+          </div>
+          <div class="orbit-icon orbit-2" title="Node.js">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+          </div>
+          <div class="orbit-icon orbit-3" title="JavaScript">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          </div>
+          <div class="orbit-icon orbit-4" title="Python">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          </div>
+          <div class="orbit-icon orbit-5" title="MongoDB">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+          </div>
+          <div class="orbit-icon orbit-6" title="Java">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+          </div>
+        </div>
+
+        <!-- Floating glass info cards -->
+        <div class="float-card float-card-1">
+          <div class="float-card-icon">🎨</div>
+          <div>
+            <div class="float-card-title">UI/UX Design</div>
+            <div class="float-card-sub">Figma Expert</div>
+          </div>
+        </div>
+        <div class="float-card float-card-2">
+          <div class="float-card-icon">🧊</div>
+          <div>
+            <div class="float-card-title">3D & Motion</div>
+            <div class="float-card-sub">Blender · Three.js</div>
+          </div>
+        </div>
+        <div class="float-card float-card-3">
+          <div class="float-card-icon">⚡</div>
+          <div>
+            <div class="float-card-title">Performance</div>
+            <div class="float-card-sub">99 Lighthouse</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="mouse"><div class="wheel"></div></div>
+      <span>Scroll down</span>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Work With</span>
+        <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+        <p class="section-desc">A curated set of technologies I use to build powerful, production-ready applications.</p>
+      </div>
+      <div class="skills-grid">
+        <!-- Cards filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">A selection of real-world projects I've built from scratch.</p>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Cards filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="section">
+    <div class="container about-inner">
+      <div class="about-text" data-aos="fade-right">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">Passionate <span class="gradient-text">Developer</span></h2>
+        <p>
+          I'm Aryan, a full stack developer with a passion for crafting
+          beautiful, high-performing web experiences. My core stack is the
+          MERN ecosystem, complemented by Python for AI/ML workloads and Java
+          for enterprise-grade backend systems.
+        </p>
+        <p>
+          I care deeply about clean code, great UX, and building software that
+          actually solves problems. When I'm not coding, I'm exploring bleeding-edge
+          tech, contributing to open-source, or leveling up my side projects.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight"><span>🎓</span> B.Tech Computer Science</div>
+          <div class="highlight"><span>💡</span> Problem Solver & Builder</div>
+          <div class="highlight"><span>🌍</span> Open to Remote Roles</div>
+          <div class="highlight"><span>📦</span>20+ Projects Shipped</div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Let's Work Together →</a>
+      </div>
+      <div class="about-visual" data-aos="fade-left">
+        <div class="experience-card glass-card">
+          <div class="exp-header">
+            <div class="exp-icon">💼</div>
+            <div>
+              <div class="exp-title">Full Stack Developer</div>
+              <div class="exp-company">Freelance & Projects</div>
+            </div>
+          </div>
+          <ul class="exp-points">
+            <li>Built 10+ production MERN apps</li>
+            <li>Developed AI chatbots using Python & LangChain</li>
+            <li>REST APIs for scalable microservices</li>
+            <li>Responsive & accessible UI with React</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-desc">Have a project in mind? Let's build something amazing together.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info glass-card">
+          <h3>Contact Info</h3>
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:aryankr.ku@gmail.com" class="contact-val">aryankr.ku@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💬</div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <a href="https://www.linkedin.com/in/maxxaaa" target="_blank" class="contact-val">linkedin.com/in/maxxaaa</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <a href="https://github.com/codewithmaxxaaa" target="_blank" class="contact-val">github.com/codewithmaxxaaa</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <a href="tel:+919265213533" class="contact-val">+91 92652 13533</a>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/codewithmaxxaaa" target="_blank" class="social-btn" aria-label="GitHub">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.57.11.78-.25.78-.55v-1.95c-3.19.69-3.86-1.54-3.86-1.54-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.68 1.24 3.33.95.1-.74.4-1.24.73-1.53-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.9 10.9 0 012.87-.39c.97 0 1.95.13 2.87.39 2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.07.78 2.16v3.2c0 .3.2.67.79.55C20.22 21.4 23.5 17.09 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/maxxaaa" target="_blank" class="social-btn" aria-label="LinkedIn">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM3.56 20.45h3.56V9H3.56v11.45z"/></svg>
+            </a>
+            <a href="mailto:aryankr.ku@gmail.com" class="social-btn" aria-label="Email">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+            </a>
+            <a href="tel:+919265213533" class="social-btn" aria-label="Phone">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 9.82a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card" id="contactForm">
+          <h3>Send a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project inquiry..." />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-full" id="sendBtn">
+            <span>Send Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo">
+        <span class="logo-bracket">&lt;</span>Aryan<span class="logo-bracket">/&gt;</span>
+      </a>
+      <p class="footer-copy">© 2025 Aryan · Built with ❤️ & lots of ☕</p>
+      <a href="#home" class="back-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
