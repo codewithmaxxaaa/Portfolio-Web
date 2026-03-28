@@ -87,59 +87,24 @@ const SKILLS = [
 const PROJECTS = [
   {
     emoji: '🤖', bg: 'linear-gradient(135deg,#1a1a2e,#16213e)',
-    tags: ['React', 'Node.js', 'OpenAI'],
-    title: 'AI Chat Platform',
-    desc: 'Real-time AI chat application with OpenAI GPT integration, streaming responses, conversation history, and a sleek dark UI.',
-    demo: '#', repo: '#'
+    tags: ['JavaScript', 'APIs', 'Node.js'],
+    title: 'AI Assistant Tool',
+    desc: 'Built an AI-powered assistant that responds to queries and automates tasks using JavaScript and external AI APIs. Fast, practical, and production-ready.',
+    demo: '#', repo: 'https://github.com/codewithmaxxaaa'
   },
   {
-    emoji: '🛒', bg: 'linear-gradient(135deg,#1a2e1a,#163e16)',
-    tags: ['MERN', 'Stripe', 'Redux'],
-    title: 'E-Commerce Store',
-    desc: 'Full-stack e-commerce platform with JWT auth, Stripe payments, admin dashboard, inventory management, and order tracking.',
-    demo: '#', repo: '#'
-  },
-  {
-    emoji: '📊', bg: 'linear-gradient(135deg,#2e1a1a,#3e1616)',
-    tags: ['Python', 'FastAPI', 'ML'],
-    title: 'ML Analytics Dashboard',
-    desc: 'Data analytics platform with real-time charts, machine learning predictions, data ingestion pipeline, and export tools.',
-    demo: '#', repo: '#'
+    emoji: '🍔', bg: 'linear-gradient(135deg,#2e1a0a,#3e2a0d)',
+    tags: ['React', 'Node.js', 'MongoDB'],
+    title: 'Burger Ordering Website',
+    desc: 'Full-stack food ordering system with cart functionality, clean modern UI, and a responsive layout. A business-ready MERN stack application deployed on Vercel.',
+    demo: 'https://client-nu-two-91.vercel.app/', repo: 'https://github.com/codewithmaxxaaa/Sunpro-Incorporation'
   },
   {
     emoji: '💬', bg: 'linear-gradient(135deg,#1a1a2e,#2e1a3e)',
-    tags: ['Socket.io', 'React', 'MongoDB'],
-    title: 'Real-Time Chat App',
-    desc: 'Feature-rich messaging app with WebSocket support, rooms, file sharing, emoji reactions, and end-to-end encryption.',
-    demo: '#', repo: '#'
-  },
-  {
-    emoji: '🎯', bg: 'linear-gradient(135deg,#2e2a1a,#3e361a)',
-    tags: ['Next.js', 'PostgreSQL', 'Prisma'],
-    title: 'Task Management SaaS',
-    desc: 'Collaborative project management tool with kanban boards, real-time updates, team roles, and Gantt chart visualization.',
-    demo: '#', repo: '#'
-  },
-  {
-    emoji: '🌐', bg: 'linear-gradient(135deg,#1a2a2e,#163033)',
-    tags: ['React Native', 'Firebase'],
-    title: 'Social Media Clone',
-    desc: 'Full-featured social platform with posts, stories, direct messages, follow system, and push notifications.',
-    demo: '#', repo: '#'
-  },
-  {
-    emoji: '🎨', bg: 'linear-gradient(135deg,#2e1a2a,#3e1635)',
-    tags: ['Figma', 'UI/UX', 'Prototyping'],
-    title: 'Design System & UI Kit',
-    desc: 'A comprehensive design system with 100+ components, tokens, dark/light modes, interactive Figma prototypes, and documentation site.',
-    demo: '#', repo: '#'
-  },
-  {
-    emoji: '🧊', bg: 'linear-gradient(135deg,#1a2e2e,#0d3333)',
-    tags: ['Three.js', 'WebGL', 'GSAP'],
-    title: '3D Interactive Portfolio',
-    desc: 'Immersive 3D web experience built with Three.js and WebGL — custom shaders, particle systems, smooth GSAP scroll animations.',
-    demo: '#', repo: '#'
+    tags: ['MERN', 'Socket.io', 'MongoDB'],
+    title: 'Customer Support System',
+    desc: 'Chat-based system to handle user queries efficiently. Built with the MERN stack and real-time WebSocket communication for instant support response.',
+    demo: '#', repo: 'https://github.com/codewithmaxxaaa'
   },
 ];
 
@@ -421,56 +386,6 @@ const PROJECTS = [
   if (!char) return;
   char.addEventListener('mouseenter', () => char.style.animationPlayState = 'paused');
   char.addEventListener('mouseleave', () => char.style.animationPlayState = 'running');
-})();
-
-/* ══════════════════════════════════════════
-   TYPEWRITER
-══════════════════════════════════════════ */
-(function initTypewriter() {
-  const el = document.getElementById('typedSub');
-  if (!el) return;
-
-  const roles = [
-    'Full Stack Developer',
-    'UI/UX Designer',
-    'Web Designer',
-    '3D Creator',
-    'MERN Specialist',
-  ];
-
-  // Build cursor span once
-  const cursor = document.createElement('span');
-  cursor.className = 'typed-cursor';
-  el.appendChild(cursor);
-
-  let roleIdx = 0, charIdx = 0, deleting = false;
-
-  function tick() {
-    const current = roles[roleIdx];
-    if (!deleting) {
-      charIdx++;
-      el.firstChild.nodeValue = current.slice(0, charIdx);
-      if (charIdx === current.length) {
-        deleting = true;
-        setTimeout(tick, 1800);
-        return;
-      }
-    } else {
-      charIdx--;
-      el.firstChild.nodeValue = current.slice(0, charIdx);
-      if (charIdx === 0) {
-        deleting = false;
-        roleIdx = (roleIdx + 1) % roles.length;
-      }
-    }
-    setTimeout(tick, deleting ? 45 : 80);
-  }
-
-  // Prep: wrap existing text in a text node
-  el.innerHTML = '';
-  el.appendChild(document.createTextNode(''));
-  el.appendChild(cursor);
-  setTimeout(tick, 600);
 })();
 
 /* ══════════════════════════════════════════
